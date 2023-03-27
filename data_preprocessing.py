@@ -1,3 +1,13 @@
+# Data Preprocessing:
+# Gather the datasets containing biographical, contact, and financial details for individuals.
+# Clean the data to remove irrelevant or duplicate records. This can be done by removing records with missing values, removing duplicates based on unique identifiers (such as name, date of birth, or social security number), or using data cleaning techniques such as spellchecking, standardizing addresses or phone numbers, and removing outliers.
+# Merge the cleaned datasets into a single dataset.
+# Standardize the data format to make sure that each record contains the same fields and data types.
+# Perform any necessary data transformations such as converting categorical data to numerical data, scaling numerical data, or encoding text data as vectors.
+
+
+# This code assumes that you have a single CSV file called 'suspect.csv' containing the biographical, contact, and financial details for two individuals per row, with columns named after each field followed by a suffix of either '.1' or '.2' to indicate which individual it corresponds to (e.g., 'name.1' and 'name.2' for the names of person1 and person
+
 import pandas as pd
 from fuzzywuzzy import fuzz
 
